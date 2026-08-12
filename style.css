@@ -1,0 +1,268 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+:root {
+    --purple500: #281154;
+    --purple300: #270082;
+    --purple600: #1b0058;
+    --red600: #dc0000;
+    --body: #f9f6ff;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    line-height: 1.4;
+    scroll-behavior: smooth;
+}
+
+
+section {
+    scroll-margin: 50px;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+header {
+    background-color: var(--purple300);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.3);
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    padding: 20px 0;
+    min-height: 70px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 28px;
+    font-weight: 700;
+}
+
+.logo img {
+    width: 45px;
+}
+
+button {
+    padding: 10px 15px;
+    border: none;
+    transition: 0.2s ease-in-out;
+}
+
+button:hover {
+    transition: 0.2s ease-in-out;
+    opacity: 0.8;
+}
+
+nav ul {
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li {
+    padding-bottom: 5px;
+    transition: 0.3s;
+}
+
+nav ul li:hover {
+    border-bottom: 2px solid white;
+}
+
+.hero-section {
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("images/img5.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    height: 100vh;
+    display: grid;
+    color: white;
+    place-items: center;
+    text-align: center;
+}
+
+.hero-section .container {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.hero-section h1 {
+    font-size: 96px;
+}
+
+.hero-section h3 {
+    font-size: 32px;
+}
+
+.hero-section p {
+    max-width: 700px;
+    font-size: 20px;
+    margin: 0 auto;
+}
+
+.hero-btn {
+    padding: 14px 35px;
+    font-size: 18px;
+    background-color: #ff4d6d;
+    color: white;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.hero-btn:hover {
+    background-color: #e63956;
+    transform: scale(1.05);
+}
+
+.music-section {
+    padding-top: 50px;
+    background: var(--purple500);
+}
+
+.music-section .container {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.ipad-iphone-img {
+    margin-top: -400px;
+    position: relative;
+    top: 400px;
+}
+
+.primary-btn {
+    background-color: var(--red600);
+    color: white;
+}
+
+.secondary-btn {
+    background-color: var(--purple300);
+    color: white;
+}
+
+.about-music{
+    padding-top: 500px;
+    display: grid;
+    place-items: center;
+    gap: 50px;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.video-section {
+    background-image: url(images/img2.jpg);
+    min-height: 900px;
+    display: grid;
+    place-items: center;
+    color: white;
+    text-align: center;
+
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.video-section .container{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    align-items: center;
+    padding: 80px 0;
+    margin-top: 0px;
+}
+
+.hero-section, .video-section {
+    position: relative;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.video-container {
+    width: 100%;
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+.video-container video {
+    width: 90%;
+    max-width: 1100px;
+    border-radius: 15px;
+    display: block;
+
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.8);
+}
+
+.gift-section {
+    display: flex;
+    justify-content: center;
+    margin: 100px 0;
+    gap: 50px;
+    scroll-margin: 120px;
+}
+
+.gift-content {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.footer-upper {
+    background-color: var(--purple600);
+    padding: 20px;
+}
+
+.footer-upper .container {
+    display: flex;
+    color: white;
+    justify-content: space-between;
+}
+
+.footer-upper h4 {
+    padding-bottom: 2px;
+    border-bottom: 2px solid white;
+    margin-bottom: 10px;
+}
+
+.footer-lower {
+    background-color: var(--purple300);
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    color: wheat;
+}
